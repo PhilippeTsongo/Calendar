@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Js calendar</title>
+    <link href="css/calendar.css" rel="stylesheet">
+    
+ </head>
+ <body>
+    <div id="cal-wrap">
+      	<!-- choose the period -->
+        <div id="cal-date">
+        	<select id="cal-mth"></select>
+        	<select id="cal-yr"></select>
+      	</div>
+
+      	<!--calendar content -->
+      	<div id="cal-container"></div>
+
+	    <!-- event input -->
+	    <form id="cal-event">
+	        <h1 id="evt-head"></h1>
+	        <div id="evt-date"></div>
+	        <textarea id="evt-details" required></textarea>
+	       	<input id="evt-close" type="button" value="Close"/>
+	        <input id="evt-del" type="button" value="Delete"/>
+	        <input id="evt-save" type="submit" value="Save"/>
+	    </form>
+    </div>
+	<!-- connection te js file -->
+	<script async src="js/calendar.js"></script>
+</body>
+</html>
